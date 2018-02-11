@@ -1,5 +1,5 @@
 <script type="text/javascript" src="<{xoImgUrl}>js/jquery.animateSlider.top.js"></script>
-<div class="fullcontainer banner grid">
+<div class="grid">
 	<ul class="anim-slider-top">
 		<li class="anim-slide-top">
 			<div id="img2"></div>

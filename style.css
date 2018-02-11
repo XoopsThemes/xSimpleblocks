@@ -1,10 +1,9 @@
 /* CSS Document */
 /*
-Name:               xSimpleblocks
+Name:               xSimpleblocks (for XOOPS 2.5.9)
 Author:	   			Brutalicuss /support@eunion.info/	 
 License:            MIT & Personal & Comercial usage
 DEMO URL:			http://eunion.info/xoops/xsimpleblocks
-GITHUB              https://github.com/XoopsThemes/xsimpleblocks
 */
 @-webkit-viewport   {width: device-width;}
 @-moz-viewport      {width: device-width;}
@@ -23,17 +22,19 @@ body {background-color:#F6F7F9;font-family:'Open Sans',sans-serif;line-height:1.
 #smartmenu {padding:8px;background:#DCDCDC;box-shadow:0 0 6px #505050; -moz-box-shadow:0 0 6px #505050; -webkit-box-shadow:0 0 6px #505050;}
 .smartmenulink {margin-left:30px;}
 .menuSub {display:block;margin-left:10px;}
-.xheader {top:0;position:fixed;background:#284A66;height:80px;width:100%;z-index:9999;box-shadow:0 0 7px #505050; -moz-box-shadow:0 0 7px #505050; -webkit-box-shadow:0 0 7px #505050;opacity:0.9;}
+.xheader {top:0;position:fixed;background:#284A66;height:65px;width:100%;z-index:9999;box-shadow:0 0 7px #505050; -moz-box-shadow:0 0 7px #505050; -webkit-box-shadow:0 0 7px #505050;opacity:0.9;}
 .btn-primary a{color: inherit}
-.xlogo {float:left;margin-top:20px;margin-left:20px;}
+.xlogo {float:left;margin-top:15px;margin-left:20px;}
 .xlogo img{max-width:160px;}
-.xbanner {float:right;margin-top:10px;margin-right:50px;}
-.fastmenu {float:left;margin-top:24px;}
-.fi{font-size: 42px;line-height: 42px;margin-top:2px;}
+.xbanner {float:right;margin-top:2px;margin-right:50px;}
+.custombanner {float:right;margin-top:2px;margin-right:50px;}
+#pop2menu {margin-top:2px;}
+.fastmenu {float:left;margin-top:15px;}
+.fi{font-size: 42px !important;line-height: 42px;margin-top:1px;}
 .fixx {display:none;}
 .pop_li{font-size: 12px;}
 .fontfastmenu {font-size: 9px;font-weight:bold;}
-.fa-bars{color: #F7F7F7;font-size: 32px;margin-left:15px;}
+.fa-bars{color: #F7F7F7;font-size: 32px !important;margin-left:15px;}
 /* Blocks */
 .xbtitle {font-weight:900;color:#284A66;margin-bottom:8px;margin-top:10px;}
 .xbsubtitle {font-weight:bold;color:#545050;font-size:13px;}
@@ -61,18 +62,18 @@ body {background-color:#F6F7F9;font-family:'Open Sans',sans-serif;line-height:1.
 .xoverplayheight {height:200px;}
 /* Footer */
 .xcontent {margin-top:15px;padding:10px;}
-.xfcontent {margin-bottom:55px;margin-top:30px;background:#97AAB8;height:100%;width:100%;padding:15px 65px 5px 75px;box-shadow:0 0 5px #505050; -moz-box-shadow:0 0 5px #505050; -webkit-box-shadow:0 0 5px #505050;}
-.xfooter {width:100%;bottom:0;position:fixed;height:55px;background:#284A66;z-index:9000;box-shadow:0 0 5px #505050; -moz-box-shadow:0 0 5px #505050; -webkit-box-shadow:0 0 5px #505050;opacity:0.8;}
-.footercontent {padding-top:20px;text-align:center;color:#F5F6F2;font-size:10px;}
+.xfcontent {margin-bottom:45px;margin-top:30px;background:#97AAB8;height:100%;width:100%;padding:15px 65px 5px 75px;box-shadow:0 0 5px #505050; -moz-box-shadow:0 0 5px #505050; -webkit-box-shadow:0 0 5px #505050;}
+.xfooter {width:100%;bottom:0;position:fixed;height:45px;background:#284A66;z-index:9000;box-shadow:0 0 5px #505050; -moz-box-shadow:0 0 5px #505050; -webkit-box-shadow:0 0 5px #505050;opacity:0.8;}
+.footercontent {padding-top:16px;text-align:center;color:#F5F6F2;font-size:10px;}
 .footercontent a:link{color:#00D4FF;font-size:10px;}
 .footercontent a:hover{text-decoration:underline;}
 /* Sliders */
-.topslider {margin-top:83px;}
+.topslider {margin-top:67px;}
 #slideshow {position:relative;height:200px;}
 #slideshow IMG {position:absolute;top:0;left:0;z-index:2;opacity:0.0;}
 #slideshow IMG.active {z-index:4;opacity:1.0;}
 #slideshow IMG.last-active {z-index:3;}
-.nonsystemslider {margin-top:83px;width:100%;box-shadow:0 0 7px #CCC; -moz-box-shadow:0 0 7px #CCC; -webkit-box-shadow:0 0 7px #CCC;}
+.nonsystemslider {margin-top:67px;width:100%;box-shadow:0 0 7px #CCC; -moz-box-shadow:0 0 7px #CCC; -webkit-box-shadow:0 0 7px #CCC;}
 #background_cycler{padding:0;margin:0;width:100%;position:fixed;top:0;left:0;z-index:-1;}
 #background_cycler img{position:fixed;left:0;top:0;width:100%;z-index:1;}
 #background_cycler img.active{z-index:3}
@@ -80,8 +81,6 @@ body {background-color:#F6F7F9;font-family:'Open Sans',sans-serif;line-height:1.
 .back-to-top {position: fixed;bottom:1.5em;left: 3px;text-decoration:none;color:#F7F7F7;font-size:42px!important;padding:12px;display:none;}
 .backtop a {color:#A0D8E3;}
 .backtop a:hover {color:#74E8FF;}
-#loading {width: 100%;height: 100%;top: 0px;left: 0px;position:fixed;display:block;opacity:0.7;background-color:#F6F7F9;z-index:99;text-align:center;}
-#loading-image {position:relative;top:350px;z-index:100;}
 .searchbtn {background:#F7F7F7;padding:2px;margin-left:3px;border:1px solid #333;border-radius:3px;}
 .searchbtn:hover {background:#5CFF5C;}
 #searchbar:focus{background:#FDF2BF;}
@@ -93,14 +92,17 @@ iframe {max-width:100%;}
 .xfooter {height:80px;}
 #demo-switcher {margin-bottom:80px;}
 #demo-switcher-search {margin-bottom:80px;}
+.xblock, .xbblock  {width:105%;margin-left:-15px;}
+.xfblock {width:120%;margin-left:-10px;}
 }
 @media (max-width: 767px) {
 .mhide {display:none;}
 img {max-width:95%;}
 .outer {font-size:10px;}
+.xblock, .xbblock  {margin-left:-15px;}
+.xfblocks {width:108%;margin-left:-20px;}
 }
 @media (max-width: 991px) {
-#loading-image {top:50px;}
 .dnone {display:none;}
 .socialmenu {background:inherit;}
 #toggle-button2 {background:inherit;}
@@ -113,19 +115,20 @@ img {max-width:95%;}
 .xfooter {position:relative;}
 .xfcontent {margin-bottom:0px;margin-top:0px;}
 .push-1-12 {margin-left:10px;}
+.xbanner img{max-width:90%;}
+html, body {overflow-x:hidden;}
 }
 @media (max-width: 1199px) {
 a:link {font-size:12px;}
+.xheader {position:relative;}
 .xblock, .xbblock, .xcontent, .bigcontent, .xfblocks {font-size:12px;}
 .xblock > ul > li  {font-size:12px;}
-#loading-image {top:200px;}
 .dnone2 {display:none;}
-.mobilecontent {width:80%;}
 .topslider {margin-top:0px !important;}
+.nonsystemslider {margin-top:0px;height:110%;}
+.nonsystemslider img{height:100%;}
 }
 @media (max-width: 1359px) {
 .back-to-top {bottom: 3em;}
-.xheader {position:relative;}
-.topslider {margin-top:2px;}
-.nonsystemslider {margin-top:0px;}
+.mobilecontent {position:absolute;margin-left:100px;width:80%;}
 }

@@ -15,7 +15,7 @@
 <meta name="generator" content="XOOPS" />
 <link href="<{$xoops_url}>/favicon.ico" rel="icon" />
 <link rel="stylesheet" type="text/css" href="<{xoImgUrl}>css/simplegrid.css" />
-<link rel="stylesheet" type="text/css" href="<{xoImgUrl}>css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="<{xoImgUrl}>css/font-awesome-local.min.css" />
 <link rel="stylesheet" type="text/css" href="<{xoImgUrl}>css/demo.css" />
 <link rel="stylesheet" type="text/css" href="<{xoImgUrl}>css/jquery.animateSlider.top.css" />
 <link rel="stylesheet" type="text/css" href="<{xoImgUrl}>css/topslider.css" />
@@ -27,34 +27,13 @@
 <script type="text/javascript" src="<{xoImgUrl}>js/jquery.min.js"></script>
 <script type="text/javascript" src="<{xoImgUrl}>js/modernizr.js"></script>	 
 <script type="text/javascript">
-jQuery(document).ready(function() {
-    var offset = 220;
-    var duration = 500;
-    jQuery(window).scroll(function() {
-        if (jQuery(this).scrollTop() > offset) {
-            jQuery('.back-to-top').fadeIn(duration);
-        } else {
-            jQuery('.back-to-top').fadeOut(duration);
-        }
-    });    
-    jQuery('.back-to-top').click(function(event) {
-        event.preventDefault();
-        jQuery('html, body').animate({scrollTop: 0}, duration);
-        return false;
-    })
-});
+jQuery(document).ready(function() {var offset = 220;var duration = 500;jQuery(window).scroll(function() {if (jQuery(this).scrollTop() > offset) {jQuery('.back-to-top').fadeIn(duration);
+} else {jQuery('.back-to-top').fadeOut(duration);}});jQuery('.back-to-top').click(function(event) {event.preventDefault();jQuery('html, body').animate({scrollTop: 0}, duration);return false;})});
 </script>
 <{$xoops_module_header}>
 </head> 
 <body>
-<{if $homepage and $xoops_dirname == "system"}>
-<div id="loading">
-<div class="col-1-3 mobile-col-1-3 push-1-3 hide-on-mobile">
-<img id="loading-image" src="<{xoImgUrl}>images/ajax-loader.gif" alt="ajax-loader" />
-</div>
-</div>
-<{/if}>
-<div class="hide-on-mobile dnone2">
+<div class="dnone2">
 <{includeq file="$theme_name/tpl/xbackslider.tpl"}>
 </div>
 <div class="xheader">
@@ -66,12 +45,12 @@ jQuery(document).ready(function() {
 <{if $xoops_banner and $xoops_banner != '&nbsp;'}>
 <div class="xbanner mhide"><{$xoops_banner}></div>
 <{else}>
-<div class="xbanner mhide"><a href="#" title="#"><img src="<{xoImgUrl}>images/custombanner.jpg" alt="#" /></a></div>
+<div class="custombanner mhide"><a href="#" title="#"><img src="<{xoImgUrl}>images/custombanner.jpg" alt="#" /></a></div>
 <{/if}>
 </div>
 </div>
 <{if $homepage}>
-<div class="headerback grid topslider hide-on-mobile dnone">
+<div class="headerback grid topslider dnone">
 <{includeq file="$theme_name/tpl/xtopslider.tpl"}>
 </div>
 <{/if}>
@@ -108,11 +87,6 @@ jQuery(document).ready(function() {
 <{$xoops_footer}>
 </div>
 </div>
-<script type="text/javascript">
-  $(window).load(function() {
-    $('#loading').hide();
-  });
-</script>
 <script type="text/javascript" src="<{xoImgUrl}>js/jquery.popmenu.js"></script>
 </body>
 </html>

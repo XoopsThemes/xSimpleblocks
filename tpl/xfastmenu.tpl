@@ -16,7 +16,7 @@
 <{if $pmcount}><li class="pop_li fixx"><div><a rel="nofollow" href="<{$xoops_url}>/viewpmsg.php" title="New message"><i class="fi fa fa-envelope green"></i></a></div><div class="fontfastmenu">New MSG</div></li><{elseif $xoops_isuser}><li class="pop_li fixx"><div><a rel="nofollow" href="<{$xoops_url}>/modules/pm/" title="Inbox"><i class="fi fa fa-inbox white"></i></a></div><div class="fontfastmenu">Inbox</div></li><{/if}>
 <{if $xoops_isuser}><li class="pop_li fixx"><div><a rel="nofollow" href="<{$xoops_url}>/user.php?op=logout" title="logout"><i class="fi fa fa-eject red"></i></a></div><div class="fontfastmenu">Logout</div></li><{else}><li class="pop_li fixx"><div><a rel="nofollow" href="<{$xoops_url}>/user.php" title="login"><i class="fi fa fa-play green"></i></a></div><div class="fontfastmenu">Login</div></li><{/if}>
 <{if (xoops_isActiveModule('contact'))}><li class="pop_li fixx"><div><a rel="canonical" href="<{$xoops_url}>/modules/contact/" title="User Menu"><i class="fi fa fa-envelope-open-o white"></i></a></div><div class="fontfastmenu">Contact</div></li><{/if}>
-<{if $xoops_isadmin}><li class="pop_li fixx"><div><a rel="nofollow" href="<{$xoops_url}>/admin.php" title="Admin menu"><i class="fi fa fa-cog orange"></i></a></div><div class="fontfastmenu">Panel</div></li><{/if}>
+<{if $xoops_isadmin}><li class="pop_li fixx"><div><a rel="nofollow" href="<{$xoops_url}>/admin.php" title="Admin menu"><i class="fi fa fa-cog yellow"></i></a></div><div class="fontfastmenu">Panel</div></li><{/if}>
 </ul>
 </div>
 <script type="text/javascript">
