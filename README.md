@@ -3,6 +3,7 @@
 
 This is responsive theme for XOOPS CMS / www.xoops.org for 2.5.8 version or latter
 
+![Theme Preview](/shot.jpg)
 
 This theme is under MIT license and free for personal and commercial usage
 
