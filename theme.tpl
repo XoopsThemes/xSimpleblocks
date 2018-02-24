@@ -36,19 +36,20 @@ jQuery(document).ready(function() {var offset = 220;var duration = 500;jQuery(wi
 <div class="dnone2">
 <{includeq file="$theme_name/tpl/xbackslider.tpl"}>
 </div>
-<div class="xheader">
+<script>$(document).on("scroll",function(){if($(document).scrollTop()>100){ $("header").removeClass("large").addClass("small");}else{$("header").removeClass("small").addClass("large");}});</script>
+<header class="xheader">
 <div class="fastmenu">
 <{includeq file="$theme_name/tpl/xfastmenu.tpl"}>
 </div>
 <div class="mobilecontent grid">
 <div class="xlogo"><a href="<{xoAppUrl /}>" title="<{$xoops_sitename}>"><img src="<{xoImgUrl}>images/logo.png" alt="<{$xoops_sitename}>" /></a></div>
 <{if $xoops_banner and $xoops_banner != '&nbsp;'}>
-<div class="xbanner mhide"><{$xoops_banner}></div>
+<div class="xbanner mhide"><em><{$xoops_banner}></em></div>
 <{else}>
 <div class="custombanner mhide"><a href="#" title="#"><img src="<{xoImgUrl}>images/custombanner.jpg" alt="#" /></a></div>
 <{/if}>
 </div>
-</div>
+</header>
 <{if $homepage}>
 <div class="headerback grid topslider dnone">
 <{includeq file="$theme_name/tpl/xtopslider.tpl"}>
@@ -59,7 +60,8 @@ jQuery(document).ready(function() {var offset = 220;var duration = 500;jQuery(wi
 <div class="backtop fnone">
 <a href="#" class="back-to-top fa fa-5x fa-arrow-circle-o-up" title="title"></a>
 </div>
-<div class="xfooter">
+<script>$(document).on("scroll",function(){if($(document).scrollTop()<300){ $("footer").addClass("fastfooter")}else{$("footer").removeClass("fastfooter")}});</script>
+<footer class="xfooter fastfooter">
 <div id="demo-switcher">
 <div id="demo-menu">
 <div class="socialmenu">
@@ -85,8 +87,11 @@ jQuery(document).ready(function() {var offset = 220;var duration = 500;jQuery(wi
 </div>
 <div class="footercontent">
 <{$xoops_footer}>
+<span class="xoopslogo fnone">
+<img src="<{xoImgUrl}>images/favicon.png" alt="xoops logo">
+</span>
 </div>
-</div>
+</footer>
 <script type="text/javascript" src="<{xoImgUrl}>js/jquery.popmenu.js"></script>
 </body>
 </html>

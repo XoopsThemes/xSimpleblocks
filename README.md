@@ -1,7 +1,7 @@
 # Theme name: xSimpleblocks
+Version 1.1.5 Final
 
-
-This is responsive theme for XOOPS CMS / www.xoops.org for 2.5.8 version or latter
+This is responsive theme for XOOPS CMS / www.xoops.org for 2.5.9 version
 
 ![Theme Preview](/shot.jpg)
 
