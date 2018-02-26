@@ -1,9 +1,8 @@
 /* CSS Document */
 /*
-Name:               xSimpleblocks (for XOOPS 2.5.9)
+Name:               xSimpleBlocks (for XOOPS 2.5.9)
 Author:	   			Brutalicuss /support@eunion.info/	 
 License:            MIT & Personal & Comercial usage
-DEMO URL:			http://eunion.info/xoops/xsimpleblocks
 */
 @-webkit-viewport   {width: device-width;}
 @-moz-viewport      {width: device-width;}
@@ -35,6 +34,13 @@ body {background-color:#F6F7F9;font-family:'Open Sans',sans-serif;line-height:1.
 .pop_li{font-size: 12px;}
 .fontfastmenu {font-size: 9px;font-weight:bold;}
 .fa-bars{color: #F7F7F7;font-size: 32px !important;margin-left:15px;}
+header {transition: all 0s;-moz-transition: all 0s;-webkit-transition: all 0s; -o-transition: all 0s;}
+header.small{height: 50px;opacity:0.8; }
+header.small img{height: 25px; margin-top: -1px;}
+header.small>.fastmenu {margin-top:18px;}
+header.small>.fastmenu span>i{margin-top:-12px;}
+header.small ul{padding-top:5px!important;}
+header.small em{display:none ! important;}
 /* Blocks */
 .xbtitle {font-weight:900;color:#284A66;margin-bottom:8px;margin-top:10px;}
 .xbsubtitle {font-weight:bold;color:#545050;font-size:13px;}
@@ -62,12 +68,13 @@ body {background-color:#F6F7F9;font-family:'Open Sans',sans-serif;line-height:1.
 .xoverplayheight {height:200px;}
 /* Footer */
 .xcontent {margin-top:15px;padding:10px;}
-.xfcontent {margin-bottom:45px;margin-top:30px;background:#97AAB8;height:100%;width:100%;padding:15px 65px 5px 75px;box-shadow:0 0 5px #505050; -moz-box-shadow:0 0 5px #505050; -webkit-box-shadow:0 0 5px #505050;}
+.xfcontent {margin-bottom:45px;margin-top:30px;background:#97AAB8;height:100%;width:100%;padding:25px 65px 15px 75px;box-shadow:0 0 5px #505050; -moz-box-shadow:0 0 5px #505050; -webkit-box-shadow:0 0 5px #505050;}
 .xfooter {width:100%;bottom:0;position:fixed;height:45px;background:#284A66;z-index:9000;box-shadow:0 0 5px #505050; -moz-box-shadow:0 0 5px #505050; -webkit-box-shadow:0 0 5px #505050;opacity:0.8;}
 .footercontent {padding-top:16px;text-align:center;color:#F5F6F2;font-size:10px;}
 .footercontent a:link{color:#00D4FF;font-size:10px;}
 .footercontent a:hover{text-decoration:underline;}
 .xoopslogo img{max-width:30px;position:absolute;padding-left:5px;margin-top:-5px !important;}
+.fastfooter {display:none;}
 /* Sliders */
 .topslider {margin-top:67px;}
 #slideshow {position:relative;height:200px;}
@@ -86,14 +93,6 @@ body {background-color:#F6F7F9;font-family:'Open Sans',sans-serif;line-height:1.
 .searchbtn:hover {background:#5CFF5C;}
 #searchbar:focus{background:#FDF2BF;}
 #com_text {max-width:80%;}
-header, a, img, i, span, iframe, em{transition: all 1s;-moz-transition: all 1s;-webkit-transition: all 1s; -o-transition: all 1s;}
-header.small{height: 50px;opacity:0.8; }
-header.small img{height: 25px; margin-top: -1px;}
-header.small>.fastmenu {margin-top:18px;}
-header.small>.fastmenu span>i{font-size: 18px;margin-top:-10px; z-index:10}
-header.small ul{padding-top:5px!important;}
-header.small em{display:none;}
-.fastfooter {display:none;}
 /* Media */
 img {max-width:100%;}
 iframe {max-width:100%;}
@@ -130,6 +129,7 @@ html, body {overflow-x:hidden;}
 @media (max-width: 1199px) {
 a:link {font-size:12px;}
 .xheader {position:relative;}
+.xfcontent {margin-top:0px;}
 .xblock, .xbblock, .xcontent, .bigcontent, .xfblocks {font-size:12px;}
 .xblock > ul > li  {font-size:12px;}
 .dnone2 {display:none;}

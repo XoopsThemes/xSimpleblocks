@@ -1,8 +1,8 @@
-Theme name: xSimpleblocks
+Theme name: xSimpleBlocks
 =========================
 
-This is responsive theme for XOOPS CMS / www.xoops.org for 2.5.9 version or latter
-==================================================================================
+This is responsive theme for XOOPS CMS / www.xoops.org for XOOPS 2.5.9
+======================================================================
 
 This theme is under MIT license and free for personal and commercial usage
 ==========================================================================
@@ -11,8 +11,6 @@ This theme is based on simplegrid css / http://thisisdallas.github.io/Simple-Gri
 and font awesome icons / http://fontawesome.io/
 =================================================================================
 
-DEMO AND DOWNLOAD URL:			http://eunion.info/xoops/xsimpleblocks
-================================================================
 
 Author:
 Brutalicuss         support@eunion.info
@@ -49,7 +47,7 @@ custom banner with the same size. You can set your image from image folder "imag
 ===============
 !!!IMPORTANT!!!
 ===============
-There is 25 different bottom blocks configurations, 12 for top blocks and 5 for footer blocks.
+There are 25 different bottom blocks configurations, 12 for top blocks and 5 for footer blocks.
 But actually Bottom Blocks are TOP and Top Blocks are BOTTOM. Than just set in xoops admin panel
 - blocks menu - you TOP blocks configuration at the bottom fields and your BOTTOM blocks
 configuration at the TOP fields.

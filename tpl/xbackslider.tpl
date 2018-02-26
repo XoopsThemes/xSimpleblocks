@@ -38,7 +38,7 @@ function cycleImages(){
     }
     $(window).load(function(){
 		$('#background_cycler').fadeIn();
-		  setInterval('cycleImages()', 20000);
+		  setInterval('cycleImages()', 10000);
     })
 </script>
 <img class="active b2" src="<{xoImgUrl}>images/background/c3.jpg" alt="background"/>

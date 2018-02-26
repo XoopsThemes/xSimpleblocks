@@ -22,12 +22,11 @@
 <link rel="stylesheet" type="text/css" href="<{xoImgUrl}>css/xoops.css" />
 <link rel="stylesheet" type="text/css" href="<{xoImgUrl}>css/normalize.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
-<script type="text/javascript" src="<{xoImgUrl}>js/jquery-1.11.0.js"></script>
+<script type="text/javascript" src="<{xoImgUrl}>js/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="<{xoImgUrl}>js/demo.js"></script>
-<script type="text/javascript" src="<{xoImgUrl}>js/jquery.min.js"></script>
 <script type="text/javascript" src="<{xoImgUrl}>js/modernizr.js"></script>	 
 <script type="text/javascript">
-jQuery(document).ready(function() {var offset = 220;var duration = 500;jQuery(window).scroll(function() {if (jQuery(this).scrollTop() > offset) {jQuery('.back-to-top').fadeIn(duration);
+jQuery(document).ready(function() {var offset = 300;var duration = 500;jQuery(window).scroll(function() {if (jQuery(this).scrollTop() > offset) {jQuery('.back-to-top').fadeIn(duration);
 } else {jQuery('.back-to-top').fadeOut(duration);}});jQuery('.back-to-top').click(function(event) {event.preventDefault();jQuery('html, body').animate({scrollTop: 0}, duration);return false;})});
 </script>
 <{$xoops_module_header}>
@@ -44,9 +43,9 @@ jQuery(document).ready(function() {var offset = 220;var duration = 500;jQuery(wi
 <div class="mobilecontent grid">
 <div class="xlogo"><a href="<{xoAppUrl /}>" title="<{$xoops_sitename}>"><img src="<{xoImgUrl}>images/logo.png" alt="<{$xoops_sitename}>" /></a></div>
 <{if $xoops_banner and $xoops_banner != '&nbsp;'}>
-<div class="xbanner mhide"><em><{$xoops_banner}></em></div>
+<em><span class="xbanner mhide"><{$xoops_banner}><!----></span><!----></em>
 <{else}>
-<div class="custombanner mhide"><a href="#" title="#"><img src="<{xoImgUrl}>images/custombanner.jpg" alt="#" /></a></div>
+<em><span class="custombanner mhide"><a href="#" title="#"><img src="<{xoImgUrl}>images/custombanner.jpg" alt="#" /></a><!----></span><!----></em>
 <{/if}>
 </div>
 </header>
@@ -60,20 +59,20 @@ jQuery(document).ready(function() {var offset = 220;var duration = 500;jQuery(wi
 <div class="backtop fnone">
 <a href="#" class="back-to-top fa fa-5x fa-arrow-circle-o-up" title="title"></a>
 </div>
-<script>$(document).on("scroll",function(){if($(document).scrollTop()<300){ $("footer").addClass("fastfooter")}else{$("footer").removeClass("fastfooter")}});</script>
+<script>$(document).on("scroll",function(){if($(document).scrollTop()<400){ $("footer").addClass("fastfooter")}else{$("footer").removeClass("fastfooter")}});</script>
 <footer class="xfooter fastfooter">
 <div id="demo-switcher">
 <div id="demo-menu">
 <div class="socialmenu">
 <div class="socialmenuicons">
-<a href="#" target="_blank" title="title"><i class="fa fa-google-plus sicon"></i></a>
-<a href="#" target="_blank" title="title"><i class="fa fa-linkedin sicon"></i></a>
-<a href="#" target="_blank" title="title"><i class="fa fa-twitter sicon"></i></a>
-<a href="#" target="_blank" title="title"><i class="fa fa-facebook sicon"></i></a>
+<a href="#" target="_blank" title="title"><i class="fa fa-google-plus sicon"><!----></i></a>
+<a href="#" target="_blank" title="title"><i class="fa fa-linkedin sicon"><!----></i></a>
+<a href="#" target="_blank" title="title"><i class="fa fa-twitter sicon"><!----></i></a>
+<a href="#" target="_blank" title="title"><i class="fa fa-facebook sicon"><!----></i></a>
 </div>
 </div>	
 </div>
-<div id="toggle-button2"><i class="fa fa-heart buttonicon fa-2x" title="title"></i></div>
+<div id="toggle-button2"><i class="fa fa-heart buttonicon fa-2x" title="title"><!----></i></div>
 </div>
 <div id="demo-switcher-search">
 <div id="demo-menu-search">
@@ -83,7 +82,7 @@ jQuery(document).ready(function() {var offset = 220;var duration = 500;jQuery(wi
 <button class="searchbtn" type="submit">&nbsp;OK&nbsp;</button>
 </form>
 </div>
-<div id="toggle-button-search"><i class="fa fa-search buttonsearch fa-2x" title="title"></i></div>
+<div id="toggle-button-search"><i class="fa fa-search buttonsearch fa-2x" title="title"><!----></i></div>
 </div>
 <div class="footercontent">
 <{$xoops_footer}>
